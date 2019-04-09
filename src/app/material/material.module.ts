@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material';
 import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 const MaterialComponents=[
   MatButtonModule, 
@@ -40,7 +41,8 @@ const MaterialComponents=[
   MatSelectModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatTableModule
+  MatTableModule,
+  MatPaginatorModule
 ]
 
 @NgModule({

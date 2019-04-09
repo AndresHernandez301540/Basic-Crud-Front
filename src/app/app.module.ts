@@ -7,10 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MaterialModule} from './material/material.module';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { CdkColumnDef } from '@angular/cdk/table';
 import { CardComponent } from './card/card.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ItemsComponent } from './items/items.component'; 
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { ItemsComponent } from './items/items.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [CdkColumnDef],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

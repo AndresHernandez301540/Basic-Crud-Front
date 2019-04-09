@@ -22,4 +22,13 @@ export class RestService {
     );
   }
 
+  getUsers(): Observable<any> {
+    return this.http.get<any>('http://localhost:3000/' + 'users/all').pipe(
+      map(this.extractData));
+  }
+    
+  private extractData(res: Response) {
+    const body = res;
+    return body || { };
+  }
 }
