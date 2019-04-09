@@ -1,3 +1,6 @@
-<mat-toolbar color="primary">
-    <div>Register</div>
+<mat-toolbar color="primary" class="navbar">
+    <div>
+        <mat-icon color="black">person_add</mat-icon><span [routerLinkActive]="['active']" [routerLink]="['/register']" >Register</span>
+        <mat-icon color="black">list</mat-icon><span [routerLinkActive]="['active']" [routerLink]="['/list']">List</span>
+    </div>
 </mat-toolbar>
